@@ -3,16 +3,19 @@
 <suite name="Exercise Suite 1">
 
   <test name="WebDriver">
+  
   	<classes>
   		<class name="exercise1.OpenChromeBrowser" />
   		<class name="exercise1.OpenMozillaBrowser" />
   	</classes>
-  </test> 
+  </test>
  
   <test name="AgodaTestFolderChrome" >
+  <parameter name="URL" value="https://wwww.agoda.com"/>
   	<classes>
   		<class name="exercise2.AgodaTestExercise1"></class>
   		<class name="exercise2.AgodaTestExercise2" />
+  		<class name="exercise2.AgodaTestExercise3" />
   	</classes>
   </test>
  

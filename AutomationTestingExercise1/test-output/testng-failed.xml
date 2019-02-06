@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Exercise Suite 1]">
-  <test name="AgodaTestFolderChrome(failed)" preserve-order="true">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Exercise Suite 1]">
+  <parameter name="URL" value="https://wwww.agoda.com"/>
+  <test thread-count="5" name="AgodaTestFolderChrome(failed)">
     <classes>
-      <class name="exercise2.AgodaTestExercise1">
+      <class name="exercise2.AgodaTestExercise3">
         <methods>
-          <include name="VerifiedTitle"/>
           <include name="LaunchedBrowser"/>
           <include name="terminateBrowser"/>
           <include name="EndTest"/>
           <include name="StartTest"/>
+          <include name="TestUrlParameter"/>
         </methods>
-      </class> <!-- exercise2.AgodaTestExercise1 -->
-      <class name="exercise2.AgodaTestExercise2">
-        <methods>
-          <include name="LaunchedBrowser"/>
-          <include name="terminateBrowser"/>
-          <include name="StartTest"/>
-          <include name="EndTest"/>
-        </methods>
-      </class> <!-- exercise2.AgodaTestExercise2 -->
+      </class> <!-- exercise2.AgodaTestExercise3 -->
     </classes>
   </test> <!-- AgodaTestFolderChrome(failed) -->
 </suite> <!-- Failed suite [Exercise Suite 1] -->

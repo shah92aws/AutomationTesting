@@ -2,8 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/01 My Project 1/03 Eclipse Workspace 1/TestAutomationSelenium/ExecutableWebDriver/jcommander-1.7.jar"/>
-	<classpathentry kind="lib" path="D:/01 My Project 1/03 Eclipse Workspace 1/TestAutomationSelenium/ExecutableWebDriver/testng-6.7.jar"/>
 	<classpathentry kind="lib" path="D:/01 My Project 1/02 Library/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="D:/01 My Project 1/02 Library/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="D:/01 My Project 1/02 Library/libs/byte-buddy-1.8.15.jar"/>
@@ -11,5 +9,8 @@
 	<classpathentry kind="lib" path="D:/01 My Project 1/02 Library/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="D:/01 My Project 1/02 Library/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/01 My Project 1/02 Library/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/01 My Project 1/03 Eclipse Workspace 1/AutomationTestingExercise1/ExecutableWebdriver/jcommander-1.7.jar"/>
+	<classpathentry kind="lib" path="D:/01 My Project 1/03 Eclipse Workspace 1/AutomationTestingExercise1/ExecutableWebdriver/testng-6.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

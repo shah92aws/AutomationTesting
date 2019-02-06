@@ -1,174 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[The Chrome browser is opened <br>]]>
-    </line>
-    <line>
-      <![CDATA[Inside search bar the 'Kedah' is entered<br>]]>
-    </line>
-    <line>
-      <![CDATA[Search button is clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Result generated<br>]]>
-    </line>
-    <line>
-      <![CDATA[The Chrome browser is opened <br>]]>
-    </line>
-    <line>
-      <![CDATA[The Mozilla browser is opened <br>]]>
-    </line>
-    <line>
-      <![CDATA[Inside search bar the 'Kedah' is entered<br>]]>
-    </line>
-    <line>
-      <![CDATA[Search button is clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Result generated<br>]]>
+      <![CDATA[The Mozilla browser is opened ]]>
     </line>
   </reporter-output>
-  <suite name="Exercise Suite 1" duration-ms="83370" started-at="2019-02-06T10:54:26Z" finished-at="2019-02-06T10:55:49Z">
+  <suite name="Exercise Suite 1" duration-ms="16093" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:56:11Z">
     <groups>
     </groups>
-    <test name="WebDriver" duration-ms="16859" started-at="2019-02-06T10:54:26Z" finished-at="2019-02-06T10:54:42Z">
-      <class name="exercise1.OpenMozillaBrowser">
-        <test-method status="PASS" signature="mozilla()[pri:0, instance:exercise1.OpenMozillaBrowser@18df8434]" name="mozilla" duration-ms="6537" started-at="2019-02-06T18:54:36Z" finished-at="2019-02-06T18:54:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mozilla -->
-      </class> <!-- exercise1.OpenMozillaBrowser -->
-      <class name="exercise1.OpenChromeBrowser">
-        <test-method status="PASS" signature="chrome()[pri:0, instance:exercise1.OpenChromeBrowser@5e600dd5]" name="chrome" duration-ms="10303" started-at="2019-02-06T18:54:26Z" finished-at="2019-02-06T18:54:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chrome -->
-      </class> <!-- exercise1.OpenChromeBrowser -->
-    </test> <!-- WebDriver -->
-    <test name="AgodaTestFolderChrome" duration-ms="66416" started-at="2019-02-06T10:54:43Z" finished-at="2019-02-06T10:55:49Z">
-      <class name="exercise2.AgodaTestExercise1">
-        <test-method status="PASS" signature="StartTest()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="StartTest" is-config="true" duration-ms="0" started-at="2019-02-06T18:54:43Z" finished-at="2019-02-06T18:54:43Z">
+    <test name="AgodaTestFolderChrome" duration-ms="16093" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:56:11Z">
+      <class name="exercise2.AgodaTestExercise3">
+        <test-method status="PASS" signature="StartTest()[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="StartTest" is-config="true" duration-ms="11" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:55:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartTest -->
-        <test-method status="PASS" signature="LaunchedBrowser()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="LaunchedBrowser" is-config="true" duration-ms="13125" started-at="2019-02-06T18:54:43Z" finished-at="2019-02-06T18:54:56Z">
+        <test-method status="PASS" signature="LaunchedBrowser(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="LaunchedBrowser" is-config="true" duration-ms="13786" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:56:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://wwww.agoda.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[The Chrome browser is opened <br>]]>
+              <![CDATA[The Mozilla browser is opened ]]>
             </line>
           </reporter-output>
         </test-method> <!-- LaunchedBrowser -->
-        <test-method status="PASS" signature="SearchResult()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="SearchResult" duration-ms="8640" started-at="2019-02-06T18:54:56Z" finished-at="2019-02-06T18:55:04Z">
+        <test-method status="PASS" signature="TestUrlParameter(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="TestUrlParameter" duration-ms="9" started-at="2019-02-06T14:56:09Z" finished-at="2019-02-06T14:56:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://wwww.agoda.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[Inside search bar the 'Kedah' is entered<br>]]>
-            </line>
-            <line>
-              <![CDATA[Search button is clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Result generated<br>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- SearchResult -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="terminateBrowser" is-config="true" duration-ms="2752" started-at="2019-02-06T18:55:04Z" finished-at="2019-02-06T18:55:07Z">
+        </test-method> <!-- TestUrlParameter -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="terminateBrowser" is-config="true" duration-ms="2264" started-at="2019-02-06T14:56:09Z" finished-at="2019-02-06T14:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="LaunchedBrowser()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="LaunchedBrowser" is-config="true" duration-ms="14323" started-at="2019-02-06T18:55:07Z" finished-at="2019-02-06T18:55:21Z">
-          <reporter-output>
-            <line>
-              <![CDATA[The Chrome browser is opened <br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LaunchedBrowser -->
-        <test-method status="FAIL" signature="VerifiedTitle()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="VerifiedTitle" duration-ms="16" started-at="2019-02-06T18:55:21Z" finished-at="2019-02-06T18:55:21Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Agoda: Cheap Hotel Booking - Discount Accommodations] but found [Official Agoda.com: Book Hotels for Cheap, up to 80% Off!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Agoda: Cheap Hotel Booking - Discount Accommodations] but found [Official Agoda.com: Book Hotels for Cheap, up to 80% Off!]
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at org.testng.Assert.assertEquals(Assert.java:181)
-	at exercise2.AgodaTestExercise1.VerifiedTitle(AgodaTestExercise1.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifiedTitle -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="terminateBrowser" is-config="true" duration-ms="2367" started-at="2019-02-06T18:55:21Z" finished-at="2019-02-06T18:55:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="EndTest()[pri:0, instance:exercise2.AgodaTestExercise1@2a7f1f10]" name="EndTest" is-config="true" duration-ms="0" started-at="2019-02-06T18:55:24Z" finished-at="2019-02-06T18:55:24Z">
+        <test-method status="PASS" signature="EndTest()[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="EndTest" is-config="true" duration-ms="1" started-at="2019-02-06T14:56:11Z" finished-at="2019-02-06T14:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->
-      </class> <!-- exercise2.AgodaTestExercise1 -->
-      <class name="exercise2.AgodaTestExercise2">
-        <test-method status="PASS" signature="StartTest()[pri:0, instance:exercise2.AgodaTestExercise2@740cae06]" name="StartTest" is-config="true" duration-ms="0" started-at="2019-02-06T18:55:24Z" finished-at="2019-02-06T18:55:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartTest -->
-        <test-method status="PASS" signature="LaunchedBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@740cae06]" name="LaunchedBrowser" is-config="true" duration-ms="15238" started-at="2019-02-06T18:55:24Z" finished-at="2019-02-06T18:55:39Z">
-          <reporter-output>
-            <line>
-              <![CDATA[The Mozilla browser is opened <br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LaunchedBrowser -->
-        <test-method status="PASS" signature="OpenNewTab()[pri:0, instance:exercise2.AgodaTestExercise2@740cae06]" name="OpenNewTab" duration-ms="9535" started-at="2019-02-06T18:55:39Z" finished-at="2019-02-06T18:55:49Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Inside search bar the 'Kedah' is entered<br>]]>
-            </line>
-            <line>
-              <![CDATA[Search button is clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Result generated<br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- OpenNewTab -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@740cae06]" name="terminateBrowser" is-config="true" duration-ms="404" started-at="2019-02-06T18:55:49Z" finished-at="2019-02-06T18:55:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="EndTest()[pri:0, instance:exercise2.AgodaTestExercise2@740cae06]" name="EndTest" is-config="true" duration-ms="1" started-at="2019-02-06T18:55:49Z" finished-at="2019-02-06T18:55:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EndTest -->
-      </class> <!-- exercise2.AgodaTestExercise2 -->
+      </class> <!-- exercise2.AgodaTestExercise3 -->
     </test> <!-- AgodaTestFolderChrome -->
   </suite> <!-- Exercise Suite 1 -->
 </testng-results>
