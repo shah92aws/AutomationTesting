@@ -4,7 +4,7 @@ Self exercise repo for automation testing tools
 
 What I Learned
 ==============
-1. Configure selenium libray in eclipse
+1. Configure selenium library in eclipse
 
 2. Selenium Webdriver
     - ChromeDriver (Chrome Browser)
