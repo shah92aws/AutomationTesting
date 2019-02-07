@@ -8,7 +8,7 @@
         <methods>
           <include name="LaunchedBrowser"/>
           <include name="terminateBrowser"/>
-          <include name="OpenNewTab" invocation-numbers="0"/>
+          <include name="OpenNewTab" invocation-numbers="0 2 7 8"/>
           <include name="StartTest"/>
           <include name="EndTest"/>
         </methods>
