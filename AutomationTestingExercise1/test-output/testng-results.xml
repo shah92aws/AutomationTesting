@@ -1,53 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
     <line>
       <![CDATA[The Mozilla browser is opened ]]>
     </line>
+    <line>
+      <![CDATA[Inside search bar the 'Kedah' is entered]]>
+    </line>
+    <line>
+      <![CDATA[Search button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Result generated]]>
+    </line>
+    <line>
+      <![CDATA[The Mozilla browser is opened ]]>
+    </line>
+    <line>
+      <![CDATA[Inside search bar the 'Kedah' is entered]]>
+    </line>
+    <line>
+      <![CDATA[Search button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Result generated]]>
+    </line>
+    <line>
+      <![CDATA[The Mozilla browser is opened ]]>
+    </line>
+    <line>
+      <![CDATA[Inside search bar the 'Kedah' is entered]]>
+    </line>
+    <line>
+      <![CDATA[Search button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Result generated]]>
+    </line>
   </reporter-output>
-  <suite name="Exercise Suite 1" duration-ms="16093" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:56:11Z">
+  <suite name="Default suite" duration-ms="85532" started-at="2019-02-07T16:07:21Z" finished-at="2019-02-07T16:08:47Z">
     <groups>
     </groups>
-    <test name="AgodaTestFolderChrome" duration-ms="16093" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:56:11Z">
-      <class name="exercise2.AgodaTestExercise3">
-        <test-method status="PASS" signature="StartTest()[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="StartTest" is-config="true" duration-ms="11" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:55:55Z">
+    <test name="Default test" duration-ms="85532" started-at="2019-02-07T16:07:21Z" finished-at="2019-02-07T16:08:47Z">
+      <class name="exercise2.AgodaTestExercise2">
+        <test-method status="PASS" signature="StartTest()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="StartTest" is-config="true" duration-ms="4" started-at="2019-02-07T16:07:21Z" finished-at="2019-02-07T16:07:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartTest -->
-        <test-method status="PASS" signature="LaunchedBrowser(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="LaunchedBrowser" is-config="true" duration-ms="13786" started-at="2019-02-06T14:55:55Z" finished-at="2019-02-06T14:56:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://wwww.agoda.com]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="LaunchedBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="LaunchedBrowser" is-config="true" duration-ms="18119" started-at="2019-02-07T16:07:21Z" finished-at="2019-02-07T16:07:39Z">
           <reporter-output>
             <line>
               <![CDATA[The Mozilla browser is opened ]]>
             </line>
           </reporter-output>
         </test-method> <!-- LaunchedBrowser -->
-        <test-method status="PASS" signature="TestUrlParameter(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="TestUrlParameter" duration-ms="9" started-at="2019-02-06T14:56:09Z" finished-at="2019-02-06T14:56:09Z">
+        <test-method status="FAIL" signature="OpenNewTab(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="OpenNewTab" duration-ms="8483" started-at="2019-02-07T16:07:39Z" data-provider="DataSet1" finished-at="2019-02-07T16:07:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://wwww.agoda.com]]>
+                <![CDATA[Kuala Lumpur]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <li class="PropertyCardItem ssr-search-result "> is not clickable at point (814,542.125) because another element <div class="box box__fixed box__fixed--180"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'SHAHRIDZUAN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\shahrid92\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 00eb9985-feea-4f7a-a6b7-ec0724015ac0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <li class="PropertyCardItem ssr-search-result "> is not clickable at point (814,542.125) because another element <div class="box box__fixed box__fixed--180"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'SHAHRIDZUAN', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\shahrid92\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 00eb9985-feea-4f7a-a6b7-ec0724015ac0
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at exercise2.AgodaTestExercise2.OpenNewTab(AgodaTestExercise2.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Inside search bar the 'Kedah' is entered]]>
+            </line>
+            <line>
+              <![CDATA[Search button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Result generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OpenNewTab -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="terminateBrowser" is-config="true" duration-ms="4203" started-at="2019-02-07T16:07:48Z" finished-at="2019-02-07T16:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+        <test-method status="PASS" signature="LaunchedBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="LaunchedBrowser" is-config="true" duration-ms="10556" started-at="2019-02-07T16:07:52Z" finished-at="2019-02-07T16:08:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Mozilla browser is opened ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LaunchedBrowser -->
+        <test-method status="PASS" signature="OpenNewTab(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="OpenNewTab" duration-ms="11600" started-at="2019-02-07T16:08:03Z" data-provider="DataSet1" finished-at="2019-02-07T16:08:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selangor]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Inside search bar the 'Kedah' is entered]]>
+            </line>
+            <line>
+              <![CDATA[Search button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Result generated]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- TestUrlParameter -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="terminateBrowser" is-config="true" duration-ms="2264" started-at="2019-02-06T14:56:09Z" finished-at="2019-02-06T14:56:11Z">
+        </test-method> <!-- OpenNewTab -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="terminateBrowser" is-config="true" duration-ms="794" started-at="2019-02-07T16:08:14Z" finished-at="2019-02-07T16:08:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="EndTest()[pri:0, instance:exercise2.AgodaTestExercise3@1b604f19]" name="EndTest" is-config="true" duration-ms="1" started-at="2019-02-06T14:56:11Z" finished-at="2019-02-06T14:56:11Z">
+        <test-method status="PASS" signature="LaunchedBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="LaunchedBrowser" is-config="true" duration-ms="16822" started-at="2019-02-07T16:08:15Z" finished-at="2019-02-07T16:08:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Mozilla browser is opened ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LaunchedBrowser -->
+        <test-method status="PASS" signature="OpenNewTab(java.lang.String)[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="OpenNewTab" duration-ms="14639" started-at="2019-02-07T16:08:32Z" data-provider="DataSet1" finished-at="2019-02-07T16:08:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kelantan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Inside search bar the 'Kedah' is entered]]>
+            </line>
+            <line>
+              <![CDATA[Search button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Result generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OpenNewTab -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="terminateBrowser" is-config="true" duration-ms="271" started-at="2019-02-07T16:08:46Z" finished-at="2019-02-07T16:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+        <test-method status="PASS" signature="EndTest()[pri:0, instance:exercise2.AgodaTestExercise2@7823a2f9]" name="EndTest" is-config="true" duration-ms="0" started-at="2019-02-07T16:08:47Z" finished-at="2019-02-07T16:08:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->
-      </class> <!-- exercise2.AgodaTestExercise3 -->
-    </test> <!-- AgodaTestFolderChrome -->
-  </suite> <!-- Exercise Suite 1 -->
+      </class> <!-- exercise2.AgodaTestExercise2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

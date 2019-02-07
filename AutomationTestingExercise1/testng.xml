@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Exercise Suite 1" parallel="false">
 
-  <test name="WebDriver">
+ <!--  <test name="WebDriver">
   
   	<classes>
   		<class name="exercise1.OpenChromeBrowser" />
   		<class name="exercise1.OpenMozillaBrowser" />
   	</classes>
-  </test>
+  </test> -->
  
   <test name="AgodaTestFolderChrome" >
   <parameter name="URL" value="https://wwww.agoda.com"/>

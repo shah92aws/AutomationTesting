@@ -20,8 +20,6 @@ public class AgodaTestExercise3 {
 	String actual = null;
 	String expected = null;
 	
-	 
-	
 	 @BeforeClass
 	  public void StartTest() {
 		  System.out.println("Agoda Exercise Test 1 Started...");
@@ -52,7 +50,7 @@ public class AgodaTestExercise3 {
 	  }
 	  
 	  @Parameters({"URL"})
-	  @Test
+	  @Test(enabled=false)
 	  public void TestUrlParameter(String url) {
 		  System.out.println("Url Parameter : "+url);
 	  }

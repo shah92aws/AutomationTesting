@@ -1,6 +1,7 @@
 package exercise2;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.testdata.dataproviders.DataProviders1;
 
 public class AgodaTestExercise2 {
 	String baseUrl = "https://wwww.agoda.com";
@@ -38,9 +41,9 @@ public class AgodaTestExercise2 {
 	System.out.println("Launching browser...");
 	String workingDir = System.getProperty("user.dir");
 	System.setProperty("webdriver.gecko.driver", workingDir+"\\ExecutableWebDriver\\geckodriver.exe");
-	System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+	//System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
 	driver = new FirefoxDriver();
-	wait=new WebDriverWait(driver, 5);
+	wait=new WebDriverWait(driver, 10);
 	driver.get(baseUrl);
 	Reporter.log("The Mozilla browser is opened ");
   }
@@ -52,18 +55,18 @@ public class AgodaTestExercise2 {
   }
   
   
-  @Test(priority=0,enabled=true)
-  public void OpenNewTab() throws InterruptedException {
+  @Test(priority=0,enabled=true,dataProvider="DataSet1",dataProviderClass=DataProviders1.class)
+  public void OpenNewTab(String searchplaces) throws InterruptedException {
 	  
 	  Reporter.log("Inside search bar the 'Kedah' is entered");
 	  
-	  driver.findElement(By.xpath("//input[@placeholder='Enter a destination or property']")).sendKeys("Kedah");
+	  driver.findElement(By.xpath("//input[@placeholder='Enter a destination or property']")).sendKeys(searchplaces);
 	 
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='Popup__content']//li[2]//li[2]"))).click();
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-selenium='autosuggest-item']/ul/li[1]"))).click();
 	  
 	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='DayPicker-Months']//div[1]//div[3]//div[3]//div[3]//span[1]"))).click();
 	  
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='DayPicker-Day DayPicker-Day--weekends']//span[@class='DayPicker-Day__label'][contains(text(),'17')]"))).click();
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='DayPicker-Day__label'][contains(text(),'17')]"))).click();
 	  
 	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Family travelers')]"))).click();
 	  
@@ -77,10 +80,11 @@ public class AgodaTestExercise2 {
 	  
 	  Reporter.log("Result generated");
 	  
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='hotel-568179-container']"))).click();
-	  
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-selenium='hotel-item'][1]"))).click();
+	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
 	  driver.switchTo().window(tabs2.get(1));
+	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  System.out.println(driver.getTitle());
 	  
   }
