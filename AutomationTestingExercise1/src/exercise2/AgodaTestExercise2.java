@@ -80,9 +80,10 @@ public class AgodaTestExercise2 {
 	  
 	  Reporter.log("Result generated");
 	  
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-selenium='hotel-item'][1]"))).click();
+	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-selenium='hotel-item'][2]"))).click();
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  driver.switchTo().window(tabs2.get(1));
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  System.out.println(driver.getTitle());

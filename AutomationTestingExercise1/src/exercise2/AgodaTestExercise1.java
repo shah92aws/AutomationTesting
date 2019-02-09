@@ -42,7 +42,7 @@ public class AgodaTestExercise1 {
 	Reporter.log("The Chrome browser is opened ");
   }
   
-  @Test(priority=1,enabled=false)
+  @Test(priority=1,enabled=false,timeOut=7000)
   public void VerifiedTitle() {
 	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	  expected = "Agoda: Cheap Hotel Booking - Discount Accommodations";
@@ -50,7 +50,7 @@ public class AgodaTestExercise1 {
 	  Assert.assertEquals(actual, expected);
   }
   
-  @Test(priority=0,enabled=false)
+  @Test(priority=0,enabled=false,dependsOnMethods="VerifiedTitle")
   public void SearchResult() {
 	  expected = "BEST MATCH";
 	  
