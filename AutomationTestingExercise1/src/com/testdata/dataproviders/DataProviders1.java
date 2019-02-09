@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 public class DataProviders1 {
 	
 	@DataProvider(name="DataSet1")
-	public Object[][] DataProviders1() {
+	public static Object[][] DataProviders1() {
 		Object[][] data = new Object[9][1];
 		
 		data[0][0] = "Kuala Lumpur";

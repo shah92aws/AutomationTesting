@@ -8,8 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.testdata.dataproviders.DataProviders1;
+import com.testdata.dataproviders.DataProviders2;
 
 public class AgodaTestExercise3 {
 	
@@ -30,16 +34,16 @@ public class AgodaTestExercise3 {
 		  System.out.println("Agoda Exercise Test 1 Ended...");
 	  }
 	  
-	  @Parameters({"URL"})
+	  //@Parameters({"URL"})
 	  @BeforeMethod
-	  public void LaunchedBrowser(String url) {
+	  public void LaunchedBrowser() {
 		System.out.println("Launching browser...");
 		String workingDir = System.getProperty("user.dir");
 		System.setProperty("webdriver.gecko.driver", workingDir+"\\ExecutableWebDriver\\geckodriver.exe");
 		System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
 		driver = new FirefoxDriver();
 		wait=new WebDriverWait(driver, 5);
-		driver.get(url);
+		driver.get("https://wwww.agoda.com");
 		Reporter.log("The Mozilla browser is opened ");
 	  }
 	  
@@ -49,13 +53,11 @@ public class AgodaTestExercise3 {
 	      driver.close();
 	  }
 	  
-	  @Parameters({"URL"})
-	  @Test(enabled=false)
-	  public void TestUrlParameter(String url) {
-		  System.out.println("Url Parameter : "+url);
+	 
+	  @Test(enabled=true,dataProviderClass=DataProviders2.class, dataProvider = "Exceldata")
+	  public void TestUrlParameter(String name,String add) {
+		  System.out.println("Test1 : "+name);
+		  System.out.println("Test2 : "+add);
 	  }
-	  
-	  
-	  
-	  
+
 }

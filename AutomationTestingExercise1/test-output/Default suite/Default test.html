@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 08 00:07:21 SGT 2019</td>
+<td>Started on:</td><td>Sat Feb 09 20:26:39 SGT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>85 seconds (85532 ms)</td>
+<tr><td>Total time:</td><td>62 seconds (62315 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,117 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='exercise2.AgodaTestExercise2.OpenNewTab()'><b>OpenNewTab</b><br>Test class: exercise2.AgodaTestExercise2<br>Parameters: Kuala Lumpur<br/>
-<a href="#Output-2114289475" onClick='toggleBox("Output-2114289475", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2114289475" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2114289475">
-Inside search bar the 'Kedah' is entered<br/>
-Search button is clicked<br/>
-Result generated<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;li class=&quot;PropertyCardItem ssr-search-result &quot;&gt; is not clickable at point (814,542.125) because another element &lt;div class=&quot;box box__fixed box__fixed--180&quot;&gt; obscures it
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;SHAHRIDZUAN&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\shahrid92\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 00eb9985-feea-4f7a-a6b7-ec0724015ac0
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at exercise2.AgodaTestExercise2.OpenNewTab(AgodaTestExercise2.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2114289475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2114289475'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;li class=&quot;PropertyCardItem ssr-search-result &quot;&gt; is not clickable at point (814,542.125) because another element &lt;div class=&quot;box box__fixed box__fixed--180&quot;&gt; obscures it
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;SHAHRIDZUAN&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5924, moz:profile: C:\Users\shahrid92\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 00eb9985-feea-4f7a-a6b7-ec0724015ac0
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at exercise2.AgodaTestExercise2.OpenNewTab(AgodaTestExercise2.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>8</td>
-<td>exercise2.AgodaTestExercise2@7823a2f9</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -186,33 +75,25 @@ Session ID: 00eb9985-feea-4f7a-a6b7-ec0724015ac0
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='exercise2.AgodaTestExercise2.OpenNewTab()'><b>OpenNewTab</b><br>Test class: exercise2.AgodaTestExercise2<br>Parameters: Selangor<br/>
-<a href="#Output-2143139988" onClick='toggleBox("Output-2143139988", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2143139988" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2143139988">
-Inside search bar the 'Kedah' is entered<br/>
-Search button is clicked<br/>
-Result generated<br/>
-</div>
-</td>
+<td title='exercise2.AgodaTestExercise3.TestUrlParameter()'><b>TestUrlParameter</b><br>Test class: exercise2.AgodaTestExercise3<br>Parameters: null, null</td>
 <td></td>
-<td>11</td>
-<td>exercise2.AgodaTestExercise2@7823a2f9</td></tr>
+<td>0</td>
+<td>exercise2.AgodaTestExercise3@6f7fd0e6</td></tr>
 <tr>
-<td title='exercise2.AgodaTestExercise2.OpenNewTab()'><b>OpenNewTab</b><br>Test class: exercise2.AgodaTestExercise2<br>Parameters: Kelantan<br/>
-<a href="#Output-412788346" onClick='toggleBox("Output-412788346", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-412788346" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-412788346">
-Inside search bar the 'Kedah' is entered<br/>
-Search button is clicked<br/>
-Result generated<br/>
-</div>
-</td>
+<td title='exercise2.AgodaTestExercise3.TestUrlParameter()'><b>TestUrlParameter</b><br>Test class: exercise2.AgodaTestExercise3<br>Parameters: testname1, testadd1</td>
 <td></td>
-<td>14</td>
-<td>exercise2.AgodaTestExercise2@7823a2f9</td></tr>
+<td>0</td>
+<td>exercise2.AgodaTestExercise3@6f7fd0e6</td></tr>
+<tr>
+<td title='exercise2.AgodaTestExercise3.TestUrlParameter()'><b>TestUrlParameter</b><br>Test class: exercise2.AgodaTestExercise3<br>Parameters: testname2, testadd2</td>
+<td></td>
+<td>0</td>
+<td>exercise2.AgodaTestExercise3@6f7fd0e6</td></tr>
+<tr>
+<td title='exercise2.AgodaTestExercise3.TestUrlParameter()'><b>TestUrlParameter</b><br>Test class: exercise2.AgodaTestExercise3<br>Parameters: testname3, testadd3</td>
+<td></td>
+<td>0</td>
+<td>exercise2.AgodaTestExercise3@6f7fd0e6</td></tr>
 </table><p>
 </body>
 </html>

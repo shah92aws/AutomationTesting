@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="exercise2.AgodaTestExercise2">
+      <class name="exercise2.AgodaTestExercise3">
         <methods>
           <include name="LaunchedBrowser"/>
           <include name="terminateBrowser"/>
-          <include name="OpenNewTab" invocation-numbers="0"/>
-          <include name="StartTest"/>
           <include name="EndTest"/>
+          <include name="StartTest"/>
+          <include name="TestUrlParameter"/>
         </methods>
-      </class> <!-- exercise2.AgodaTestExercise2 -->
+      </class> <!-- exercise2.AgodaTestExercise3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

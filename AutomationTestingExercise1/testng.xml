@@ -11,10 +11,8 @@
   </test> -->
  
   <test name="AgodaTestFolderChrome" >
-  <parameter name="URL" value="https://wwww.agoda.com"/>
+  <!--  <parameter name="URL" value="https://wwww.agoda.com"/> -->
   	<classes>
-  		<class name="exercise2.AgodaTestExercise1"></class>
-  		<class name="exercise2.AgodaTestExercise2" />
   		<class name="exercise2.AgodaTestExercise3" />
   	</classes>
   </test>
