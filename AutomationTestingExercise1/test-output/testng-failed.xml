@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Exercise Suite 1]">
+  <listeners>
+    <listener class-name="com.testng.listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="AgodaTestFolder(failed)">
+    <parameter name="URL" value="https://wwww.agoda.com"/>
     <classes>
-      <class name="exercise2.AgodaTestExercise3">
+      <class name="exercise2.AgodaTestExercise2">
         <methods>
           <include name="LaunchedBrowser"/>
           <include name="terminateBrowser"/>
-          <include name="EndTest"/>
+          <include name="OpenNewTab" invocation-numbers="0 1 2 4 8"/>
           <include name="StartTest"/>
-          <include name="TestUrlParameter"/>
+          <include name="EndTest"/>
         </methods>
-      </class> <!-- exercise2.AgodaTestExercise3 -->
+      </class> <!-- exercise2.AgodaTestExercise2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- AgodaTestFolder(failed) -->
+</suite> <!-- Failed suite [Exercise Suite 1] -->

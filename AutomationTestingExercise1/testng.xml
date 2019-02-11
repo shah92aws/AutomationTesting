@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Exercise Suite 1" parallel="false">
 
+<listeners>
+  		<listener class-name="com.testng.listeners.Listeners" />
+</listeners>
+
  <!--  <test name="WebDriver">
   
   	<classes>
@@ -10,12 +14,18 @@
   	</classes>
   </test> -->
  
-  <test name="AgodaTestFolderChrome" >
-  <!--  <parameter name="URL" value="https://wwww.agoda.com"/> -->
+  <test name="AgodaTestFolder" >
+ 	<parameter name="URL" value="https://wwww.agoda.com"/> 
   	<classes>
-  		<class name="exercise2.AgodaTestExercise3" />
+  		<class name="exercise2.AgodaTestExercise2" />
   	</classes>
   </test>
+  
+  <!--  <test name="LazadaTestFolder">
+  	<classes>
+  		<class name="exercise3.LazadaTestExercise1"/>
+  	</classes>
+  </test>-->
  
 </suite> <!-- Suite -->
 

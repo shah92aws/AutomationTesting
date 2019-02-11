@@ -26,6 +26,10 @@ public class AgodaTestExercise2 {
 	String actual = null;
 	String expected = null;
 	
+	public WebDriver getDriver() {
+        return driver;
+    }
+	
   @BeforeClass
   public void StartTest() {
 	  System.out.println("Agoda Exercise Test 1 Started...");
@@ -33,6 +37,7 @@ public class AgodaTestExercise2 {
   
   @AfterClass
   public void EndTest() {
+	  driver.quit();
 	  System.out.println("Agoda Exercise Test 1 Ended...");
   }
   

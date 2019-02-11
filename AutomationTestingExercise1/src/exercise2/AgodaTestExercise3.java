@@ -8,11 +8,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.testdata.dataproviders.DataProviders1;
 import com.testdata.dataproviders.DataProviders2;
 
 public class AgodaTestExercise3 {
@@ -23,6 +20,10 @@ public class AgodaTestExercise3 {
 	
 	String actual = null;
 	String expected = null;
+	
+	public WebDriver getDriver() {
+        return driver;
+    }
 	
 	 @BeforeClass
 	  public void StartTest() {

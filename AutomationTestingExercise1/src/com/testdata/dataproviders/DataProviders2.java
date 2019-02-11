@@ -64,7 +64,7 @@ public class DataProviders2 {
 	        	//System.out.println("loop2 : "+j);
 	            //System.out.print(row.getCell(j).getStringCellValue()+",");
 	            tabArray[i][j] = row.getCell(j).getStringCellValue();
-	            System.out.println(guru99Sheet.getRow(i).getCell(j));
+	            //ystem.out.println(guru99Sheet.getRow(i).getCell(j));
 	        }
 
 	        System.out.println();
@@ -73,18 +73,5 @@ public class DataProviders2 {
 		
 		return tabArray;
 	}
-	
-	
-	
-//	public static void main(String...strings) throws IOException{
-//
-//	    DataProviders2 objExcelFile = new DataProviders2();
-//
-//	    String filePath = "C:\\Users\\shahrid92\\Desktop";
-//
-//	    //objExcelFile.readExcelFiles(filePath,"Book1.xlsx","Sheet1");
-//
-//	}
-
-	
+		
 }
