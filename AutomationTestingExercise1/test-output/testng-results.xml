@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Get browser type : Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Get browser type : Chrome]]>
+    </line>
   </reporter-output>
-  <suite name="Exercise Suite 2" duration-ms="20800" started-at="2019-02-15T18:44:27Z" finished-at="2019-02-15T18:44:48Z">
+  <suite name="Exercise Suite 2" duration-ms="12948" started-at="2019-02-15T19:52:10Z" finished-at="2019-02-15T19:52:23Z">
     <groups>
     </groups>
-    <test name="LazadaTestScenario1" duration-ms="20800" started-at="2019-02-15T18:44:27Z" finished-at="2019-02-15T18:44:48Z">
+    <test name="LazadaTestScenario1" duration-ms="12948" started-at="2019-02-15T19:52:10Z" finished-at="2019-02-15T19:52:23Z">
       <class name="exercise3.LazadaTestExercise1">
-        <test-method status="PASS" signature="getProperties(java.lang.String, java.lang.String)[pri:0, instance:exercise3.LazadaTestExercise1@3ffc5af1]" name="getProperties" duration-ms="20777" started-at="2019-02-15T18:44:27Z" finished-at="2019-02-15T18:44:48Z">
+        <test-method status="PASS" signature="StartTest()[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="StartTest" is-config="true" duration-ms="33" started-at="2019-02-15T19:52:10Z" finished-at="2019-02-15T19:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="LaunchedBrowser(java.lang.String, java.lang.String)[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="LaunchedBrowser" is-config="true" duration-ms="6600" started-at="2019-02-15T19:52:10Z" finished-at="2019-02-15T19:52:17Z">
           <params>
             <param index="0">
               <value>
@@ -16,13 +26,83 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[datadriven.properties]]>
+                <![CDATA[DataDrivenChrome.properties]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Get browser type : Chrome]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- getProperties -->
+        </test-method> <!-- LaunchedBrowser -->
+        <test-method status="PASS" signature="TestCase01()[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="TestCase01" duration-ms="50" started-at="2019-02-15T19:52:17Z" finished-at="2019-02-15T19:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method status="PASS" signature="TerminateBrowser()[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="TerminateBrowser" is-config="true" duration-ms="666" started-at="2019-02-15T19:52:17Z" finished-at="2019-02-15T19:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TerminateBrowser -->
+        <test-method status="PASS" signature="LaunchedBrowser(java.lang.String, java.lang.String)[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="LaunchedBrowser" is-config="true" duration-ms="4887" started-at="2019-02-15T19:52:17Z" finished-at="2019-02-15T19:52:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lazada.com.my]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DataDrivenChrome.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Get browser type : Chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LaunchedBrowser -->
+        <test-method status="FAIL" signature="TestCase03()[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="TestCase03" duration-ms="42" started-at="2019-02-15T19:52:22Z" finished-at="2019-02-15T19:52:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Test] but found [Lazada.com.my: Online Shopping Malaysia - Mobiles, Tablets, Home Appliances, TV, Audio & More]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Test] but found [Lazada.com.my: Online Shopping Malaysia - Mobiles, Tablets, Home Appliances, TV, Audio & More]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at exercise3.LazadaTestExercise1.TestCase03(LazadaTestExercise1.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method status="PASS" signature="TerminateBrowser()[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="TerminateBrowser" is-config="true" duration-ms="657" started-at="2019-02-15T19:52:22Z" finished-at="2019-02-15T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TerminateBrowser -->
+        <test-method status="PASS" signature="EndTest()[pri:0, instance:exercise3.LazadaTestExercise1@6a4f787b]" name="EndTest" is-config="true" duration-ms="0" started-at="2019-02-15T19:52:23Z" finished-at="2019-02-15T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndTest -->
       </class> <!-- exercise3.LazadaTestExercise1 -->
     </test> <!-- LazadaTestScenario1 -->
   </suite> <!-- Exercise Suite 2 -->

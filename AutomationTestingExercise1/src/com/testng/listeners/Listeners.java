@@ -13,10 +13,12 @@ import com.testng.TestBase.*;
 
 public class Listeners implements ITestListener{
 	
+	String ScreenShotFolder = null;
+	
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		System.out.println("Start Test");
+		System.out.println("Start Test : "+result.getName());
+		
 		
 	}
 
@@ -31,6 +33,8 @@ public class Listeners implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		
+		ScreenShotFolder = System.getProperty("user.dir");
+		
 		Object currentClass = result.getInstance();
 		WebDriver webDriver = ((TestBase) currentClass).getDriver();
 		
@@ -40,9 +44,9 @@ public class Listeners implements ITestListener{
 			
 			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 			
-			File DestFile=new File("c://test.png");
+			//File DestFile=new File("c:\\test.png");
 			
-			FileUtils.copyFile(SrcFile, DestFile);
+			FileUtils.copyFile(SrcFile, new File(ScreenShotFolder+"\\ScreenShot\\Failed\\"+result.getName()+"_Failed.JPG"));
 			
 			System.out.println(result.getName() + " Test Failed");
 			
@@ -68,6 +72,7 @@ public class Listeners implements ITestListener{
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
+		
 		
 	}
 

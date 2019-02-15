@@ -3,6 +3,7 @@ package com.testng.TestBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Reporter;
 
 public class TestBase {
 	
@@ -21,36 +22,24 @@ public class TestBase {
 	
 	public WebDriver GetWebDriver(BrowserType Browsers) {
 		
+		Reporter.log("Get browser type : "+ Browsers );
 		WebDriverFilePath = System.getProperty("user.dir");
 		
 		switch(Browsers) {
 		
 			case Chrome: 
 				System.setProperty("webdriver.chrome.driver", WebDriverFilePath+"\\ExecutableWebDriver\\chromedriver.exe");
-				driver = new ChromeDriver();
-				break;
+				return new ChromeDriver();
+	
 			case Mozilla: 
 				System.setProperty("webdriver.gecko.driver", WebDriverFilePath+"\\ExecutableWebDriver\\geckodriver.exe");
 				System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-				driver = new FirefoxDriver();
+				return new FirefoxDriver();
 				
-			case Edge:
-				break;
+			default: return driver;
 				
-			case IE:
-				break;
-				
-			case Opera:
-				break;
-				
-			case Safari:
-				break;
-				
-			default:
-				break;
 		}
-		
-		return driver;
+
 	}
 	
 	public WebDriver getDriver() {
@@ -58,8 +47,6 @@ public class TestBase {
 	}
 	
 	public BrowserType getBrowser(String browser) {
-		
-		System.out.println("getbrowser : "+browser);
 		
 		switch(browser) {
 		case "Chrome" : return BrowserType.Chrome;

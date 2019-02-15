@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Exercise Suite 2]">
+  <listeners>
+    <listener class-name="com.testng.listeners.Listeners"/>
+  </listeners>
   <test thread-count="5" name="LazadaTestScenario1(failed)">
+    <parameter name="DDPFileName" value="DataDrivenChrome.properties"/>
     <parameter name="URL" value="https://www.lazada.com.my"/>
     <classes>
       <class name="exercise3.LazadaTestExercise1">
         <methods>
-          <include name="getProperties" invocation-numbers="0"/>
+          <include name="TestCase03"/>
+          <include name="TerminateBrowser"/>
+          <include name="EndTest"/>
+          <include name="StartTest"/>
+          <include name="LaunchedBrowser"/>
         </methods>
       </class> <!-- exercise3.LazadaTestExercise1 -->
     </classes>

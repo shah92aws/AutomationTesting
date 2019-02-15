@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Exercise_Suite_2">
-              <span class="suite-name border-passed">Exercise Suite 2</span>
+              <span class="suite-name border-failed">Exercise Suite 2</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Exercise_Suite_2" class="hide-methods failed suite-Exercise_Suite_2"> (hide)</a> <!-- hide-methods failed suite-Exercise_Suite_2 -->
+                      <a href="#" panel-name="suite-Exercise_Suite_2" class="show-methods failed suite-Exercise_Suite_2"> (show)</a> <!-- show-methods failed suite-Exercise_Suite_2 -->
+                    </span>
+                    <div class="method-list-content failed suite-Exercise_Suite_2">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Exercise_Suite_2" title="exercise3.LazadaTestExercise1" hash-for-method="TestCase03">TestCase03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Exercise_Suite_2 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Exercise_Suite_2">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Exercise_Suite_2" title="exercise3.LazadaTestExercise1" hash-for-method="getProperties(https://www.lazada.com.my, datadriven.properties)">getProperties(https://www.lazada.com.my, datadriven.properties)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Exercise_Suite_2" title="exercise3.LazadaTestExercise1" hash-for-method="TestCase01">TestCase01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Exercise_Suite_2 -->
@@ -117,6 +131,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Exercise_Suite_2" class="panel Exercise_Suite_2">
+          <div class="suite-Exercise_Suite_2-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">exercise3.LazadaTestExercise1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03">
+                  </a> <!-- TestCase03 -->
+                  <span class="method-name">TestCase03</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Test] but found [Lazada.com.my: Online Shopping Malaysia - Mobiles, Tablets, Home Appliances, TV, Audio &amp; More]
+	at exercise3.LazadaTestExercise1.TestCase03(LazadaTestExercise1.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Exercise_Suite_2-class-failed -->
           <div class="suite-Exercise_Suite_2-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -125,10 +163,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getProperties(https://www.lazada.com.my, datadriven.properties)">
-                  </a> <!-- getProperties(https://www.lazada.com.my, datadriven.properties) -->
-                  <span class="method-name">getProperties</span>
-                  <span class="parameters">(https://www.lazada.com.my, datadriven.properties)</span>
+                  <a name="TestCase01">
+                  </a> <!-- TestCase01 -->
+                  <span class="method-name">TestCase01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,11 +180,20 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Exercise Suite 2&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.testng.listeners.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LazadaTestScenario1&quot;&gt;
-    &lt;parameter name=&quot;DDPFileName&quot; value=&quot;datadriven.properties&quot;/&gt;
+    &lt;parameter name=&quot;DDPFileName&quot; value=&quot;DataDrivenChrome.properties&quot;/&gt;
     &lt;parameter name=&quot;URL&quot; value=&quot;https://www.lazada.com.my&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;exercise3.LazadaTestExercise1&quot;/&gt;
+      &lt;class name=&quot;exercise3.LazadaTestExercise1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TestCase01&quot;/&gt;
+          &lt;include name=&quot;TestCase03&quot;/&gt;
+          &lt;exclude name=&quot;TestCase02&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- exercise3.LazadaTestExercise1 --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LazadaTestScenario1 --&gt;
 &lt;/suite&gt; &lt;!-- Exercise Suite 2 --&gt;
@@ -187,16 +233,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getProperties')
+data.setCell(0, 1, 'TestCase01')
 data.setCell(0, 2, 'exercise3.LazadaTestExercise1')
-data.setCell(0, 3, 20777);
+data.setCell(0, 3, 50);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestCase03')
+data.setCell(1, 2, 'exercise3.LazadaTestExercise1')
+data.setCell(1, 3, 42);
 window.suiteTableData['Exercise_Suite_2']= { tableData: data, tableDiv: 'times-div-Exercise_Suite_2'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 92 ms</span>
               <div id="times-div-Exercise_Suite_2">
               </div> <!-- times-div-Exercise_Suite_2 -->
             </div> <!-- times-div -->
@@ -211,9 +261,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Exercise_Suite_2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">exercise3.LazadaTestExercise1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestCase02</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Exercise_Suite_2" class="panel">
@@ -223,10 +280,40 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">exercise3.LazadaTestExercise1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getProperties(https://www.lazada.com.my, datadriven.properties)</span>
+              <div class="configuration-class before">
+                <span class="method-name">StartTest</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchedBrowser(https://www.lazada.com.my, DataDrivenChrome.properties)</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestCase01</span>
+                <span class="method-start">6638 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateBrowser</span>
+                <span class="method-start">6692 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchedBrowser(https://www.lazada.com.my, DataDrivenChrome.properties)</span>
+                <span class="method-start">7358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase03</span>
+                <span class="method-start">12245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateBrowser</span>
+                <span class="method-start">12291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">EndTest</span>
+                <span class="method-start">12948 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
