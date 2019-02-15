@@ -9,7 +9,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import exercise2.AgodaTestExercise2;
+import com.testng.TestBase.*;
 
 public class Listeners implements ITestListener{
 	
@@ -32,7 +32,7 @@ public class Listeners implements ITestListener{
 		// TODO Auto-generated method stub
 		
 		Object currentClass = result.getInstance();
-		WebDriver webDriver = ((AgodaTestExercise2) currentClass).getDriver();
+		WebDriver webDriver = ((TestBase) currentClass).getDriver();
 		
 		try{
 			

@@ -6,27 +6,20 @@
   		<listener class-name="com.testng.listeners.Listeners" />
 </listeners>
 
- <!--  <test name="WebDriver">
-  
+ <test name="WebDriver">
   	<classes>
   		<class name="exercise1.OpenChromeBrowser" />
   		<class name="exercise1.OpenMozillaBrowser" />
   	</classes>
-  </test> -->
+ </test>
  
-  <test name="AgodaTestFolder" >
+ <test name="AgodaTestFolder" >
  	<parameter name="URL" value="https://wwww.agoda.com"/> 
   	<classes>
   		<class name="exercise2.AgodaTestExercise2" />
   	</classes>
-  </test>
-  
-  <!--  <test name="LazadaTestFolder">
-  	<classes>
-  		<class name="exercise3.LazadaTestExercise1"/>
-  	</classes>
-  </test>-->
- 
+ </test>
+   
 </suite> <!-- Suite -->
 
 	

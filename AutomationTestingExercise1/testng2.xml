@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Exercise Suite 2">
-  <test name="WebDriver">
-  	<packages>
-  		<package name="exercise1"></package>
-  	</packages>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+
+  <test name="LazadaTestScenario1">
+  <parameter name="URL" value="https://www.lazada.com.my"/>
+  <parameter name="DDPFileName" value="datadriven.properties"/>
+   	<classes>
+  		<class name="exercise3.LazadaTestExercise1"/>
+  	</classes>
+  </test> 
+</suite>
 
 	
 

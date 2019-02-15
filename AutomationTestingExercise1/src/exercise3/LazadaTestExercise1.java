@@ -5,19 +5,30 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.testng.TestBase.TestBase;
 
-public class LazadaTestExercise1 {
+
+public class LazadaTestExercise1 extends TestBase {
 	
+	WebDriver driver;
+	String DataDrivenPropertiesFilePath = null;
+	
+	@Parameters({"URL","DDPFileName"})
 	@Test
-	public void getProperties() throws IOException {
-		Properties properties = new Properties();
-		FileInputStream file = new FileInputStream("D:\\01 My Project 1\\03 Eclipse Workspace 1\\AutomationTestingExercise1\\src\\exercise3\\datadriven.properties");
-	
-		properties.load(file);
+	public void getProperties(String Url,String DDPFileName) throws IOException {
 		
-		System.out.println(properties.getProperty("url"));
+		DataDrivenPropertiesFilePath = System.getProperty("user.dir");
+		Properties properties = new Properties();
+		FileInputStream file = new FileInputStream(DataDrivenPropertiesFilePath+"\\DataDrivenProperties\\"+DDPFileName);
+		
+		properties.load(file);
+		driver = GetWebDriver(getBrowser(properties.getProperty("browser")));
+		driver.get(Url);
+		driver.quit();
 	}
 	
 }
